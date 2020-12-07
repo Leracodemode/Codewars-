@@ -1,0 +1,8 @@
+function halvingSum(n) {
+  let sum = n;
+  while (n >= 1) {
+    n = Math.trunc(n / 2);
+    sum = sum + n;
+  }
+ return sum;
+}
