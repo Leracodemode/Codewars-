@@ -1,0 +1,45 @@
+https://www.codewars.com/kata/5f5daf1a209a64001183af9b/train/javascript
+
+function makeChocolates(small, big, goal) {
+    const bigWeight = 5;
+    const smallWeight = 2;
+    let weight = 0, b = 0, s = 0;
+
+    while (weight < goal) {
+        for (let i=0; i < big; i++) {
+            weight += bigWeight;
+            if (goal - weight >= 0) {
+                b++;
+            } else {
+                weight -= bigWeight;
+                break;
+            }
+        }
+
+        for (let i=0; i < small; i++) {
+            weight += smallWeight;
+            if (goal - weight >= 0) {
+                s++;
+            } else {
+                weight -= smallWeight;
+                break;
+            }
+        }
+
+        if (weight === goal) {
+            return s;
+        } else {
+            if (s === small && b === big) {
+                return -1;
+            }
+            if (big > 0) {
+                big--;
+                b = 0;
+                s = 0;
+                weight -= bigWeight;
+            } else {
+                return -1;
+            }
+        }
+    }
+}
