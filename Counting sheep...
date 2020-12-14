@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+
+function countSheeps(arr) {
+  let count = 0;
+  for (let element of arr){
+    if (element) count++;
+  } 
+  return count;
+}
