@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5733f948d780e27df6000e33/train/javascript
+
+function cutCube(volume,n){
+ const isIntegerCube = n => Number.isInteger(Math.cbrt(n))
+ const cutCube = isIntegerCube(n) && isIntegerCube(volume / n);
+ return cutCube;
+}
