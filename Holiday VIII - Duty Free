@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript
+
+function dutyFree(normPrice, discount, hol){
+  let numberOfBottles = 1;
+  let discountRate = normPrice * discount / 100;
+  let discountPrice = normPrice - discountRate;
+  let saving = normPrice - discountPrice;
+    numberOfBottles = Math.floor(hol / saving);
+  return numberOfBottles;
+}
