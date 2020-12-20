@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript
+
+function race(v1, v2, g) {
+  if (v1 >= v2) return null;
+  let time = g * 3600 / (v2 - v1);
+  let h = Math.trunc(time / 3600);
+  let min = Math.trunc(time % 3600 / 60)
+  let sec = Math.trunc(time % 60);
+  let timeToWin = [h, min, sec];
+  return timeToWin;
+}
