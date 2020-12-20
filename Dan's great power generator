@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/582c42e0f000e54a7d000086/train/javascript
+
+
+function danspower(num, power) {
+  let n = num ** power
+  if (n % 2 === 0) {
+    
+    return n
+    
+  } else {
+  return Math.round(n / 10) * 10;
+    }
+}
