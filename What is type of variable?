@@ -1,5 +1,15 @@
 https://www.codewars.com/kata/57293671c98f77e84b000065/train/javascript
 
+
+1.
+
+function type(value) {
+  return {}.toString.call(value).slice(8, -1).toLowerCase();
+}
+
+2.
+
+
 function type(value) {
   if (value instanceof Array) return 'array'
   if (value instanceof Date) return 'date'
