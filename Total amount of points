@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+
+function points(games) {
+  let count = 0;
+  for (let el of games) {
+    if (el[0] > el[2]) count += 3;
+    if (el[0] < el[2]) count;
+    if (el[0] === el[2]) count += 1;
+  }
+  return count;
+}
