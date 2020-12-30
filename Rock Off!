@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5b097da6c3323ac067000036/train/javascript
+
+
+function solve(a, b) {
+  let point1 = 0;
+  let point2 = 0;
+  for (let i = 0; i < a.length; i++) {
+      if (a[i] > b[i]) point1++;
+      if (a[i] < b[i]) point2++;
+      }
+  if (point1 === point2) return `${point1}, ${point2}: that looks like a "draw"! Rock on!`;
+  return point1 > point2 ? `${point1}, ${point2}: Alice made "Kurt" proud!` : `${point1}, ${point2}: Bob made "Jeff" proud!`
+}
