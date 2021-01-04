@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/train/javascript
+
+
+function rowWeights(array){
+  let team1 = 0;
+  let team2 = 0;
+  for (let i = 0; i < array.length; i+= 2) {
+    team1 += array[i];
+    }
+  for (let j = 1; j < array.length; j+= 2) {
+    team2 += array[j];
+  }
+  return [team1, team2];
+}
