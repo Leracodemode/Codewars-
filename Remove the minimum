@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/javascript
+
+
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
