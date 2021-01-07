@@ -7,3 +7,19 @@ function sumOrProduct(array, n) {
   let product=array.reverse().slice(0,n).reduce((a,b)=>a*b,1)
   return sum>product?'sum':sum<product?'product':'same'
 }
+
+
+function sumOrProduct(array, n) {
+  let sum = 0;
+  let product = 1;
+  array=array.sort((a,b)=>a-b);
+  for (let i = array.length - 1; i >= array.length - n; i--) {
+    sum += array[i];
+  }
+  for (let i = 0; i < n; i++) {
+    product *= array[i];
+  }
+  if (sum === product) return "same";
+  }
+return sum > product? "sum" :sum < product ? "product" : "same";
+}
