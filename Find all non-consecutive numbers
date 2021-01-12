@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/58f8b35fda19c0c79400020f/train/javascript
+
+
+function allNonConsecutive (arr) {
+  let a = [];
+  let index = 0;
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i - 1] + 1) {
+      result = arr[i];
+      index = i;
+      a.push({i: index, n: result})
+    }
+  }
+  return a;
+}
