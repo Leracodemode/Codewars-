@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5436f26c4e3d6c40e5000282/train/javascript
+
+
+function sumOfN(n) {
+  let arr = [];
+  let sum = 0;
+  let multiplier = n > 0 ? 1 : -1;
+  for (let i = 0; i < Math.abs(n) + 1; i++) {
+    sum += multiplier * i;
+    arr.push(sum);
+    }
+   return arr;
+  }
