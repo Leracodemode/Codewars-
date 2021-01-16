@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a145ab08ba9148dd6000094/train/javascript
+
+
+function doubles(s) {
+  let cs = [];
+  for (let c of s) {
+    if (cs.length != 0 && cs[cs.length - 1] == c)
+      cs.pop();
+    else
+      cs.push(c);
+  }
+  return cs.join('');
+}
